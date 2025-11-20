@@ -1,0 +1,106 @@
+.wrapper{
+ width: 90%;
+  margin: 20px auto;
+}
+.container {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.messagesBox {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background: #f7f9fc;
+}
+
+.message {
+  max-width: 80%;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  display: flex;
+  border-radius: 10px;
+  line-height: 1.5;
+  font-size: 15px;
+  white-space: pre-wrap;
+  flex-direction: column;
+}
+
+.userMessage {
+  background-color: white;
+  color: gray;
+  margin-left: auto;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.botMessage {
+  background-color: #eaeef5;
+  color: #222;
+  margin-right: auto;
+}
+
+.inputBox {
+  display: flex;
+  padding: 12px;
+  background: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.input {
+  flex: 1;
+  padding: 1.2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-right: 8px;
+  font-size: 16px;
+}
+.input:focus{
+  outline: 1px solid #0078ff;
+}
+
+.button {
+  padding: 12px 30px;
+  background: #0078ff;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #005fcc;
+}
+
+.message pre {
+  background: #1e1e1e !important;
+  color: #eee;
+  padding: 12px;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 14px;
+}
+
+.message code {
+  padding: 3px 5px;
+  border-radius: 4px;
+}
+
+
+
+@media(max-width:700px){
+    .userMessage {
+      max-width: 90%;
+    }
+    .botMessage {
+      max-width: 100%;
+    }
+}
+
+
