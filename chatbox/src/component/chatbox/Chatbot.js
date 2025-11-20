@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { marked } from "marked";
 import classes from "./Chatbot.module.css";
-
 export default function ChatBot() {
   const [messages, setMessages] = useState([
     { role: "bot", text: "Hi! Ask me anything!" },
